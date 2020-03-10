@@ -11,10 +11,10 @@ import IQKeyboardManagerSwift
 import GoogleMaps
 import GooglePlaces
 
-//let googleApiKey = "AIzaSyCzd6uOtpcuGqik5zp0xvlRZpUhIl3gJ0U"
+//let googleApiKey = ""
 
 //new
-let googleApiKey = "AIzaSyAfWDWUfQ6jzD6aUBAUeaaKMZ65w8ZB1Es"
+let googleApiKey = ""
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
