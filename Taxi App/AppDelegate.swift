@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import GoogleMaps
+import GooglePlaces
+
+//let googleApiKey = "AIzaSyCzd6uOtpcuGqik5zp0xvlRZpUhIl3gJ0U"
+
+//new
+let googleApiKey = "AIzaSyAfWDWUfQ6jzD6aUBAUeaaKMZ65w8ZB1Es"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        IQKeyboardManager.shared.enable = true
+        GMSServices.provideAPIKey(googleApiKey)
+        GMSPlacesClient.provideAPIKey(googleApiKey)
+        
         return true
     }
 
